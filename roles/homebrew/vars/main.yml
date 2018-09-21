@@ -1,0 +1,5 @@
+taps:
+  - caskroom/cask
+
+packages:
+  - { name: ansible, state: present }
