@@ -1,5 +1,20 @@
 taps:
-  - caskroom/cask
+  - homebrew/cask
 
 packages:
   - { name: ansible, state: present }
+  - { name: git, state: present }
+  - { name: lv, state: present }
+  - { name: tmux, state: present }
+  - { name: tree, state: present }
+  - { name: jq, state: present }
+  - { name: zsh, state: present }
+
+cask_packages:
+  - name: alfred
+  - name: atom
+  - name: google-chrome
+  - name: iterm2
+  - name: skype
+  - name: slack
+  - name: vivaldi

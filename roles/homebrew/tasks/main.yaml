@@ -9,9 +9,17 @@
       state: present
     with_items: "{{ taps }}"
 
+  - name: homebrew cask install
+    homebrew_cask:
+      name: "{{ item.name }}"
+      state: installed
+      environment:
+        HOMEBREW_CASK_OPTS: "--appdir=/Applications"
+    with_items: "{{ cask_packages }}"
+
   - name: homebrew install
     homebrew:
       name: "{{ item.name }}"
-      #state: "{{ item.state | default('present') }}"
-      state: "{{ item.state }}"
+      state: "{{ item.state | default('present') }}"
+      #state: "{{ item.state }}"
     with_items: "{{ packages }}"
