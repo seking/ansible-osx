@@ -1,4 +1,7 @@
 - hosts: local
   user: root
   roles:
-    - homebrew
+    - role: homebrew
+      tags: homebrew
+    - role: mas
+      tags: mas

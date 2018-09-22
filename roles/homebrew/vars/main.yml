@@ -2,19 +2,23 @@ taps:
   - homebrew/cask
 
 packages:
-  - { name: ansible, state: present }
-  - { name: git, state: present }
-  - { name: lv, state: present }
-  - { name: tmux, state: present }
-  - { name: tree, state: present }
-  - { name: jq, state: present }
-  - { name: zsh, state: present }
+  - name: ansible
+  - name: git
+  - name: jq
+  - name: lv
+  - name: mas
+  - name: tmux
+  - name: tree
+  - name: zsh
 
 cask_packages:
-  - name: alfred
-  - name: atom
+#  - name: alfred
+#  - name: atom
+  - name: clipy
   - name: google-chrome
   - name: iterm2
   - name: skype
   - name: slack
+  - name: spectacle
   - name: vivaldi
+

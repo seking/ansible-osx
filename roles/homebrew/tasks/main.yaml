@@ -1,23 +1,23 @@
 - block:
-  - name: homebrew update
+  - name: Update
     homebrew:
      update_homebrew: true
 
-  - name: homebrew tap
+  - name: Tap
     homebrew_tap:
       name: "{{ item }}"
       state: present
     with_items: "{{ taps }}"
 
-  - name: homebrew cask install
+  - name: Install Cask
     homebrew_cask:
       name: "{{ item.name }}"
       state: installed
-      environment:
-        HOMEBREW_CASK_OPTS: "--appdir=/Applications"
+      install_options: "appdir=/Applications"
+      accept_external_apps: true
     with_items: "{{ cask_packages }}"
 
-  - name: homebrew install
+  - name: Install
     homebrew:
       name: "{{ item.name }}"
       state: "{{ item.state | default('present') }}"
