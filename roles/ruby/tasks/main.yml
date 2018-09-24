@@ -1,0 +1,5 @@
+- name: Setup
+  shell: |
+    /bin/bash -lc "gem install bundler"
+    /bin/bash -lc "rbenv rehash"
+

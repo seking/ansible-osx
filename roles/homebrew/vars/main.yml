@@ -7,6 +7,8 @@ packages:
   - name: jq
   - name: lv
   - name: mas
+  - name: rbenv
+  - name: ruby-build
   - name: tmux
   - name: tree
   - name: zsh
@@ -16,9 +18,11 @@ cask_packages:
 #  - name: atom
   - name: clipy
   - name: google-chrome
+  - name: google-japanese-ime
   - name: iterm2
   - name: skype
   - name: slack
   - name: spectacle
+  - name: spotify
   - name: vivaldi
 

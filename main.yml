@@ -5,3 +5,5 @@
       tags: homebrew
     - role: mas
       tags: mas
+    - role: ruby
+      tags: ruby
