@@ -1,3 +1,7 @@
+- name: install rbenv
+  git:
+    repo: https://github.com/rbenv/rbenv.git
+    dest: ~/.rbenv
 - name: Setup
   shell: |
     /bin/bash -lc "gem install bundler"

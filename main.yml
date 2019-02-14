@@ -7,3 +7,5 @@
       tags: mas
     - role: ruby
       tags: ruby
+    - role: python
+      tags: python

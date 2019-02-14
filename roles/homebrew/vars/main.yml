@@ -2,6 +2,7 @@ taps:
   - homebrew/cask
 
 packages:
+  - name: ag
   - name: ansible
   - name: git
   - name: jq
@@ -15,7 +16,7 @@ packages:
 
 cask_packages:
 #  - name: alfred
-#  - name: atom
+  - name: atom
   - name: clipy
   - name: google-chrome
   - name: google-japanese-ime
