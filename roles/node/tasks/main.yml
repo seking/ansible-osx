@@ -1,0 +1,11 @@
+- name: make directory
+  file:
+    path=~/.nodebrew/src
+    state=directory
+    recurse=yes
+- name: install node
+  shell: nodebrew install-binary latest && nodebrew use latest
+- name: path
+  lineinfile:
+    dest=~/.zshrc.local
+    line="export PATH=$PATH:$HOME/.nodebrew/current/bin"
