@@ -5,6 +5,7 @@ packages:
   - name: ag
   - name: ansible
   - name: git
+  - name: git-lfs
   - name: jq
   - name: lv
   - name: mas
@@ -31,5 +32,5 @@ cask_packages:
   - name: typora
   - name: vivaldi
   - name: xmind
-  - name: zoom
+  - name: zoomus
 
