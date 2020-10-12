@@ -17,15 +17,19 @@ packages:
   - name: graphviz
 
 cask_packages:
-#  - name: alfred
+  - name: alfred
   - name: atom
   - name: clipy
   - name: google-chrome
   - name: google-japanese-ime
   - name: iterm2
+  - name: kindle
   - name: skype
   - name: slack
   - name: spectacle
   - name: spotify
+  - name: typora
   - name: vivaldi
+  - name: xmind
+  - name: zoom
 
